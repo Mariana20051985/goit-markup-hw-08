@@ -1,0 +1,32 @@
+@import "./units/variables";
+@import "./base/common.scss";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/backdrop";
+@import "./components/portfolio-overlay";
+@import "./components/social.scss";
+@import "./components/novigation";
+@import "./components/contact";
+@import "./components/our-clients";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/values";
+@import "./layouts/activivty";
+@import "./layouts/team";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
+/* html{     
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+ /* box-sizing: inherit;   */
+
+/* колір лого header: 000000, #2196F3 */
+/* колір заголовків #212121 */
+/* колір тексту <p>  і підписів під фото  #757575*/
+/* кольори навігації #212121, акцент #2196F3 */
+/* секція героя, h1 #FFFFFF,  */
+/* вторинний колір фону #F5F4FA */

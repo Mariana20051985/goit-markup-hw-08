@@ -1,0 +1,47 @@
+//  секція "Наші цінності
+.values-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  justify-content: space-between;
+}
+.values-list__item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+}
+.values-list__title {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  color: var(--title-text-color);
+}
+.values-list__text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.values-list__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.values-list .text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+/* Іконки-Наші цінності */
+
+.values-list__picture {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+}

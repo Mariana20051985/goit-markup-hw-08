@@ -1,0 +1,27 @@
+/* хедер-контакти */
+.contact {
+  display: flex;
+}
+.contact .contact__item + .contact__item {
+  margin-left: 50px;
+}
+.contact__date {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.02em;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact .contact__date:hover,
+.contact .contac__date:focus {
+  color: var(--accent-color);
+}
+/* Іконки-контакти */
+.contact__date .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
