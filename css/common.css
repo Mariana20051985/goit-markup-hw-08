@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/* контейнер */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  /* outline: 2px solid tomato; */
-  /* background-color: plum; */
-}
-
 body {
   color: var(--primary-text-color);
   background-color: var(--background-color);
@@ -22,6 +11,12 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .section {
+    padding: 60px 0 60px 0;
+  }
 }
 
 h1,
@@ -57,5 +52,71 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+/* Заголовки секцій */
+.section-title {
+  margin-top: 0px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+
+/* контейнер */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* outline: 2px solid tomato; */
+  /* background-color: plum; */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 /*# sourceMappingURL=common.css.map */

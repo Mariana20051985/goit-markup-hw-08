@@ -4,43 +4,104 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.section-footer .adress {
+
+.footer__address {
+  font-size: 14px;
+  line-height: 2;
   color: #ffffff;
-  text-decoration: none;
+  font-style: normal;
+  padding-left: 0px;
+  margin-bottom: 9px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-footer .contacts {
+.footer__data {
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.footer__contacts {
+  font-size: 14px;
+  line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address:hover,
+.footer__address:focus,
+.footer__contacts:hover,
+.footer__contacts:focus {
+  color: var(--accent-color);
 }
 .footer-studio {
-  display: inline-block;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: 165px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+  // display: inline-block;
   /* flex-basis: calc((50%-45px) / 2); */
 }
 .footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer {
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+  }
 }
 
-.container .footer {
-  padding: 60px 0px;
-}
+// .container .footer {
+// padding: 60px 0px;
+// }
 
-.footer-contacts {
-  margin-top: 20px;
-}
+// .footer-contacts {
+// margin-top: 20px;
+// }
 
 /* Футер-Підписатися на розсилку */
 .footer__email {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 480px) and (max-width: 1199.98px) {
+    display: inline-block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer__email-input {
-  width: 358px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 450px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
+
   padding: 15px;
   line-height: 1.25;
-  margin-right: 12px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);

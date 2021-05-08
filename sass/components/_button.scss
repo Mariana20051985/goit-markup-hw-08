@@ -22,6 +22,12 @@
 }
 // кнопка "Подписаться"
 .email__button {
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   display: flex;
   align-items: center;
   text-align: center;
@@ -46,6 +52,7 @@
   background-color: var(--button-active-color);
 }
 /* кнопки портфоліо */
+
 .buttons__portfolio {
   display: inline-block;
   padding: 6px 22px;
@@ -82,19 +89,44 @@
 }
 */
 .buttons__nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 0px;
-  padding: 0px;
+  height: 44px;
   list-style: none;
+  border: none;
+  // display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
+  // margin-top: 0px;
+  // padding: 0px;
+  // list-style: none;
 }
 
 .buttons {
   display: flex;
   justify-content: center;
+  margin: 0px;
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1199.98px) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 767.98px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+  }
 }
 
 .buttons__nav:not(:last-child) {
   margin-right: 8px;
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 21px;
+  }
 }

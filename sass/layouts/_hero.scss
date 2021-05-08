@@ -6,16 +6,41 @@
   display: flex;
   align-items: center;
 }
-.hero__container {
+.hero .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero__content {
-  max-width: 696px;
+  @media screen and (min-width: 480px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 
 .hero__title {
+  @media screen and (max-width: 767.98px) {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -26,7 +51,19 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .overlay {
+  @media screen and (min-width: 480px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

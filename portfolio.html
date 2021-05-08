@@ -17,7 +17,10 @@
         <div class="container">
             <div class="main-page">
                 <nav class="navigation">
-                    <a href="" class=" logo header__logo"><span>Web</span><span class="logo__studio">Studio</span></a>
+                    <a href="" class=" logo header__logo">
+                        <span class="logo_web">Web</span>
+                        <span class="logo__studio">Studio</span>
+                    </a>
                     <ul class=" list-non site-nav">
                         <li class="site-nav__item"><a href="./index.html" class=" site-nav link">Студия</a></li>
                         <li class="site-nav__item"><a href="" class=" site-nav link current">Портфолио</a></li>
@@ -36,6 +39,61 @@
                         </svg>
                         +38 096 111 11 11</a></li>
             </ul>
+            </div>
+        </div>
+        <!-- Меню-версія для мобільного -->
+        <div class="menu__button">
+            <button type="button" class="menu__btn" data-menu-button>
+                <svg class="menu__icon" width="40" height="40">
+                    <use class="icon-open" href="./image/sprite.svg#icon-menu"></use>
+                    <use class="icon-close" href="./image/sprite.svg#icon-close-menu"></use>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="mobile-menu" data-menu>
+            <ul class=" list-non mobile-menu__nav">
+                <li class="mobile-menu__item">
+                    <a href="./index.html" class="mobile-menu__link current">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        
+            <div class="mobile-social">
+                <ul class="list-non connection-menu">
+                    <li class="connection-menu__item">
+                        <a href="tel:+380961111111" class="connection-menu__tel">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="connection-menu__item">
+                        <a href="mailto:info@devstudio.com" class="connection-menu__mail">info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+        
+                <ul class="list-non social-menu">
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Instagram">Instagram</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Twitter">Twitter</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="Facebook">Facebook</a>
+                    </li>
+                    <li class="social-menu__item">
+                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                            aria-label="LinkedIn">LinkedIn</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -223,14 +281,20 @@
 <footer class="section-footer">
     <div class="container footer">
         <div class="footer-studio">
-            <a href="" class="logo footer__logo"><span>Web</span><span class="logo-footer__studio">Studio</span></a>
+            <a href="" class="logo footer__logo">
+                <span class="logo-footer__web">Web</span>
+                <span class="logo-footer__studio">Studio</span>
+            </a>
 
-            <ul class="list-non footer-contacts">
-                <li><a href="https://goo.gl/maps/GumJZrkpZJpaKMpm8" target="_blank" rel="nooper noreferrer"
-                        class="adress">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li><a href="mailto:info@devstudio.com" class="contacts">info@example.com</a></li>
-                <li><a href="tel:+380961111111" class="contacts">+38 099 111 11 11</a></li>
-            </ul>
+            <address class="footer__address">
+                <ul class="list-non footer__data">
+                    <li class="footer__address"><a class="foorer__adress" href="https://goo.gl/maps/GumJZrkpZJpaKMpm8"
+                            target="_blank" rel="nooper noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="footer__address"><a class="footer__contacts" href="mailto:info@devstudio.com">info@example.com</a>
+                    </li>
+                    <li class="footer__address"><a class="footer__contacts" href="tel:+380961111111">+38 099 111 11 11</a></li>
+                </ul>
+            </address>
         </div>
 
         <!-- Іконки футера -->

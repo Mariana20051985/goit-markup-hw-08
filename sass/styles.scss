@@ -5,7 +5,7 @@
 @import "./components/modal";
 @import "./components/backdrop";
 @import "./components/portfolio-overlay";
-@import "./components/social.scss";
+@import "./components/social";
 @import "./components/novigation";
 @import "./components/contact";
 @import "./components/our-clients";
@@ -16,6 +16,7 @@
 @import "./layouts/team";
 @import "./layouts/footer";
 @import "./layouts/portfolio";
+@import "./components/mobile-menu";
 /* html{     
   box-sizing: border-box;
 }

@@ -29,13 +29,27 @@
 }
 
 /* Іконки футера-Приєднюйтесь */
+.footer__network {
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
 
 .footer__network-title {
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .footer__icon {
@@ -68,4 +82,5 @@
 }
 .footer__network-icon {
   padding: 0%;
+  margin: 0px;
 }
