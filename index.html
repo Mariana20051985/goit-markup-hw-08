@@ -17,10 +17,10 @@
         <!-- -->
     <header class="header">
     <div class="container">
-        <div class="main-page">
+        <!-- <div class="main-page"> -->
         <nav class="navigation">
         <a  href="" class="logo header__logo">
-            <span class="logo_web">Web</span>
+            <span class="logo__web">Web</span>
             <span class="logo__studio">Studio</span>
         </a>
         <ul class=" list-non site-nav">
@@ -45,17 +45,17 @@
         </div>
 
         <!-- Меню-версія для мобільного -->
-        <div class="menu__button">
+        <div class="menu">
             <button type="button" class="menu__btn" data-menu-button>
                 <svg class="menu__icon" width="40" height="40">
-                    <use class="icon-open" href="./image/sprite.svg#icon-menu"></use>
+                    <use class="icon-open" href="./image/sprite.svg#icon-mobil-menu"></use>
                     <use class="icon-close" href="./image/sprite.svg#icon-close-menu"></use>
                 </svg>
             </button>
         </div>
         
         <div class="mobile-menu" data-menu>
-            <ul class=" list-non mobile-menu__nav">
+            <ul class=" list-non mobile-menu__list">
                 <li class="mobile-menu__item">
                     <a href="./index.html" class="mobile-menu__link current">Студия</a>
                 </li>
@@ -67,33 +67,33 @@
                 </li>
             </ul>
         
-            <div class="mobile-social">
-                <ul class="list-non connection-menu">
-                    <li class="connection-menu__item">
-                        <a href="tel:+380961111111" class="connection-menu__tel">
+            <div class="mobile-contact">
+                <ul class="list-non mobile-contact__list">
+                    <li class="mobile-contact__item">
+                        <a href="tel:+380961111111" class="mobile-contact__tel">
                             +38 096 111 11 11</a>
                     </li>
-                    <li class="connection-menu__item">
-                        <a href="mailto:info@devstudio.com" class="connection-menu__mail">info@devstudio.com
+                    <li class="mobile-contact__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-contact__mail">info@devstudio.com
                         </a>
                     </li>
                 </ul>
         
-                <ul class="list-non social-menu">
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                <ul class="list-non mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Instagram">Instagram</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Twitter">Twitter</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Facebook">Facebook</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="LinkedIn">LinkedIn</a>
                     </li>
                 </ul>
@@ -173,17 +173,33 @@
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="list-non activity grid">
-        <li class="activity__item"><a href=""><img src="./image/box_1.jpg" alt="Человек пишет код" width="370"></a>
+        <li class="activity__item">
+            <picture>
+            <source srcset="./image/activity/box_1.jpg 1x, ./image/activity/box_1@2x.jpg 2x">
+            <img src="./image/activity/box_1.jpg" alt="Человек пишет код" width="370">
+            </picture>
+
+            
                 <div class="activity_title">
       <p class="activity__list">Десктопные приложения</p>
             </div>
     </li>
-        <li class="activity__item"><a href=""><img src="./image/box_2.jpg" alt="Работа с приложениями" width="370"></a>
+        <li class="activity__item">
+            <picture>
+                <source srcset="./image/activity/box_2.jpg 1x, ./image/activity/box_2@2x.jpg 2x">
+                <img src="./image/activity/box_2.jpg" alt="Работа с приложениями" width="370">
+            </picture>
+            
             <div class="activity_title">
         <p class="activity__list">Мобильные приложения</p>
         </div>
     </li>
-        <li class="activity__item"><a href=""><img src="./image/box_3.jpg" alt="Работа с графикой" width="370"></a>
+        <li class="activity__item">
+            <picture>
+                <source srcset="./image/activity/box_3.jpg 1x, ./image/activity/box_3.jpg 2x">
+                <img src="./image/activity/box_3.jpg" alt="Работа с графикой" width="370">
+            </picture>
+            
             <div class="activity_title">
         <p class="activity__list">Дизайнерские решения</p>
         </div>
@@ -197,8 +213,20 @@
     <h2 class="section-title">Наша команда</h2>
     <ul class=" list-non team grid">
         <li class="team__item grid__team">
-            <img src="./image/product_designer.jpg" alt="Фотокартка продуктного дизайнера" width="270">
-                <div class="manager">
+            <picture>
+                <source srcset="./image/comand/desctop/product_designer.desctop.jpg 1x, ./image/comand/desctop/product_designer.desctop@2x.jpg 2x"
+                 media="(min-width: 1200px)">
+                <source
+                    srcset="./image/comand/tablet/product_designer.tablet.jpg 1x, ./image/comand/tablet/product_designer.tablet@2x.jpg 2x"
+                     media="(min-width: 768px)">
+                 <source
+                     srcset="./image/comand/mobile/product_designer.mobile.jpg 1x, ./image/comand/mobile/product_designer.mobile@2x.jpg 2x"
+                      media="(max-width: 767.98px)">
+
+            <img src="./image/comand/desctop/product_designer.desctop.jpg" alt="Фотокартка продуктного дизайнера" width="270">
+            </picture>
+            
+            <div class="manager">
                 <h4 class="manager__name">Игорь Демьяненко</h4>
                 <p class="manager__position">Product Designer</p>
                 <ul class=" list-non social">
@@ -231,10 +259,22 @@
                         </a>
                     </li>
                 </div>
-               
         </li>
         <li class="team__item grid__team">
-            <img src="./image/frontend_developer.jpg" alt="Фотокартка розробника" width="270">
+            <picture>
+                <source
+                    srcset="./image/comand/desctop/frontend_developer.desctop.jpg 1x, ./image/comand/desctop/frontend_developer.desctop@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                <source
+                    srcset="./image/comand/tablet/frontend_developer.tablet.jpg 1x, ./image/comand/tablet/frontend_developer.tablet@2x.jpg 2x"
+                    media="(min-width: 768px)">
+                <source
+                    srcset="./image/comand/mobile/frontend_developer.mobile.jpg 1x, ./image/comand/mobile/frontend_developer.mobile@2x.jpg 2x"
+                    media="(max-width: 767.98px)">
+            
+                <img src="./image/comand/desctop/frontend_developer.desctop.jpg" alt="Фотокартка продуктного дизайнера" width="270">
+            </picture>
+        
             <div class="manager">
                 <h4 class="manager__name">Ольга Репина</h4>
                 <p class="manager__position">Frontend Developer</p>
@@ -271,7 +311,22 @@
             
         </li>
         <li class="team__item grid__team">
-            <img src="./image/marketing.jpg" alt="Фотокартка спеціаліста з маркетингу" width="270">
+ <picture>
+<source
+    srcset="./image/comand/desctop/marketing.developer.desctop.jpg 1x, ./image/comand/desctop/marketing.desctop@2x.jpg 2x"
+    media="(min-width: 1200px)">
+<source
+    srcset="./image/comand/tablet/marketing.tablet.jpg 1x, ./image/comand/tablet/marketing.tablet@2x.jpg 2x"
+    media="(min-width: 768px)">
+<source
+    srcset="./image/comand/mobile/marketing.mobile.jpg 1x, ./image/comand/mobile/marketing.mobile@2x.jpg 2x"
+    media="(max-width: 767.98px)">
+
+<img src="./image/comand/desctop/marketing.desctop.jpg" alt="Фотокартка спеціаліста з маркетингу" width="270">
+
+</picture>
+
+            
             <div class="manager">
                 <h4 class="manager__name">Николай Тарасов</h4>
                 <p class="manager__position">Marketing</p>
@@ -308,8 +363,19 @@
             
         </li>
         <li class="team__item grid__team">
-           
-            <img src="./image/ul_designer.jpg" alt="Фотокартка дизайнера" width="270">
+<picture>
+    <source
+        srcset="./image/comand/desctop/ul_designer.desctop.jpg 1x, ./image/comand/desctop/ul_designer.desctop@2x.jpg 2x"
+        media="(min-width: 1200px)">
+    <source srcset="./image/comand/tablet/ul_designer.tablet.jpg 1x, ./image/comand/tablet/ul_designer.tablet@2x.jpg 2x"
+        media="(min-width: 768px)">
+    <source srcset="./image/comand/mobile/ul_designer.mobile.jpg 1x, ./image/comand/mobile/ul_designer.mobile@2x.jpg 2x"
+        media="(max-width: 767.98px)">
+
+    <img src="./image/comand/desctop/ul_designer.desctop.jpg" alt="Фотокартка дизайнера" width="270">
+
+</picture>
+
             <div class="manager">
                 <h4 class="manager__name">Михаил Ермаков</h4>
                 <p class="manager__position">UI Designer</p>
@@ -412,7 +478,7 @@
     </a>
     <address class="footer__address">
     <ul class="list-non footer__data">
-        <li class="footer__address"><a class="foorer__address" href="https://goo.gl/maps/GumJZrkpZJpaKMpm8" target="_blank" rel="nooper noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <li class="footer__address"><a class="foorer__place" href="https://goo.gl/maps/GumJZrkpZJpaKMpm8" target="_blank" rel="nooper noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
         <li class="footer__address"><a class="footer__contacts" href="mailto:info@devstudio.com">info@example.com</a></li>
         <li class="footer__address"><a class="footer__contacts" href="tel:+380961111111">+38 099 111 11 11</a></li>
     </ul>
@@ -525,6 +591,7 @@
         </form>
     </div>
 </div>
+<script src="./js/menu-mobile.js"></script>
 <script src="./js/script.js"></script>
 </body>
 

@@ -15,10 +15,10 @@
     <!-- Шапка -->
     <header class="header">
         <div class="container">
-            <div class="main-page">
+            <!-- <div class="main-page"> -->
                 <nav class="navigation">
-                    <a href="" class=" logo header__logo">
-                        <span class="logo_web">Web</span>
+                    <a href="" class="logo header__logo">
+                        <span class="logo__web">Web</span>
                         <span class="logo__studio">Studio</span>
                     </a>
                     <ul class=" list-non site-nav">
@@ -27,32 +27,32 @@
                         <li class="site-nav__item"><a href="" class="site-nav link">Контакты</a></li>
                     </ul>
                 </nav>
-            <ul class="list-non contact">
-                <li class="contact__item"><a href="mailto:info@devstudio.com" class="contact__date">
-                        <svg class="icon" width="16" height="12">
-                            <use href="./image/sprite.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="contact__item"><a href="tel:+380961111111" class=" contact__date">
-                        <svg class="icon" width="10" height="16">
-                            <use href="./image/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+        <ul class="list-non contact">
+            <li class="contact__item"><a href="mailto:info@devstudio.com" class="contact__date">
+                    <svg class="icon" width="16" height="12">
+                        <use href="./image/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a></li>
+            <li class="contact__item"><a href="tel:+380961111111" class=" contact__date">
+                    <svg class="icon" width="10" height="16">
+                        <use href="./image/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a></li>
+        </ul>
             </div>
         </div>
         <!-- Меню-версія для мобільного -->
-        <div class="menu__button">
+        <div class="menu">
             <button type="button" class="menu__btn" data-menu-button>
                 <svg class="menu__icon" width="40" height="40">
-                    <use class="icon-open" href="./image/sprite.svg#icon-menu"></use>
+                    <use class="icon-open" href="./image/sprite.svg#icon-mobil-menu"></use>
                     <use class="icon-close" href="./image/sprite.svg#icon-close-menu"></use>
                 </svg>
             </button>
         </div>
         
         <div class="mobile-menu" data-menu>
-            <ul class=" list-non mobile-menu__nav">
+            <ul class=" list-non mobile-menu__list">
                 <li class="mobile-menu__item">
                     <a href="./index.html" class="mobile-menu__link current">Студия</a>
                 </li>
@@ -64,38 +64,39 @@
                 </li>
             </ul>
         
-            <div class="mobile-social">
-                <ul class="list-non connection-menu">
-                    <li class="connection-menu__item">
-                        <a href="tel:+380961111111" class="connection-menu__tel">
+            <div class="mobile-contact">
+                <ul class="list-non mobile-contact__list">
+                    <li class="mobile-contact__item">
+                        <a href="tel:+380961111111" class="mobile-contact__tel">
                             +38 096 111 11 11</a>
                     </li>
-                    <li class="connection-menu__item">
-                        <a href="mailto:info@devstudio.com" class="connection-menu__mail">info@devstudio.com
+                    <li class="mobile-contact__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-contact__mail">info@devstudio.com
                         </a>
                     </li>
                 </ul>
         
-                <ul class="list-non social-menu">
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                <ul class="list-non mobile-social">
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Instagram">Instagram</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Twitter">Twitter</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="Facebook">Facebook</a>
                     </li>
-                    <li class="social-menu__item">
-                        <a class="social-menu__link" href="/" target="_blank" rel="noopener norefferer"
+                    <li class="mobile-social__item">
+                        <a class="mobile-social__link" href="/" target="_blank" rel="noopener norefferer"
                             aria-label="LinkedIn">LinkedIn</a>
                     </li>
                 </ul>
             </div>
         </div>
+
     </header>
 
     <!--Секція з портфоліо-->
@@ -122,7 +123,19 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                      <img src="./image/img-portfolio/img.jpg" width="370" height="294" alt=" стораница веб сайта"> 
+                        <picture>
+                            <source
+                                srcset= "./image/portfolio/desctop/img.desctop.jpg 1x, ./image/portfolio/desctop/img.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./image/portfolio/tablet/img.tablet.jpg 1x, ./image/portfolio/tablet/img.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./image/portfolio/mobile/img.mobile.jpg 1x, ./image/portfolio/mobile/img.mobile.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                     
                     </div>
                         <div class="design">
                            <h3 class="design__title">Технокряк</h3>
@@ -140,7 +153,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                      <img src="./image/img-portfolio/img-1.jpg" width="370" height="294" alt="дизайн постера клуба New Orlean ">
+                        <picture>
+                        <source srcset="./image/portfolio/desctop/img1.desctop.jpg 1x, ./image/portfolio/desctop/img1.desctop@2x.jpg 2x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./image/portfolio/tablet/img1.tablet.jpg 1x, ./image/portfolio/tablet/img1.tablet@2x.jpg 2x"
+                            media="(min-width: 768px)">
+                        <source srcset="./image/portfolio/mobile/img1.mobile.jpg 1x, ./image/portfolio/mobile/img1.mobile@2x.jpg 2x"
+                            media="(max-width: 767.98px)">
+                        <img src="./image/portfolio/desctop/img1.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                      
                     </div>
                         <div class="design">
                             <h3 class="design__title">Постер New Orlean vs Golden Star</h3> 
@@ -157,8 +179,18 @@
                                 Компании используют эту платформу для цифрового
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
-                        </div>
-                      <img src="./image/img-portfolio/img-2.jpg" width="370" height="294" alt="логотип приложения ресторана Seafood">
+                            </div>
+                            <picture>
+                            <source srcset="./image/portfolio/desctop/img2.desctop.jpg 1x, ./image/portfolio/desctop/img2.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img2.tablet.jpg 1x, ./image/portfolio/tablet/img2.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img2.mobile.jpg 1x, ./image/portfolio/mobile/img2.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img2.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                            </picture>
+                        
+                      
                     </div>
                         <div class="design">
                          <h3 class="design__title">Ресторан Seafood</h3>
@@ -176,7 +208,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                     <img src="./image/img-portfolio/img-3.jpg" width="370" height="294" alt="наушники"> 
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img3.desctop.jpg 1x, ./image/portfolio/desctop/img3.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img3.tablet.jpg 1x, ./image/portfolio/tablet/img3.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img3.mobile.jpg 1x, ./image/portfolio/mobile/img3.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img3.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                     
                     </div>
                         <div class="design">
                           <h3 class="design__title">Проект Prime</h3>
@@ -194,7 +235,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                    <img src="./image/img-portfolio/img-4.jpg" width="370" height="294" alt="коробки">    
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img4.desctop.jpg 1x, ./image/portfolio/desctop/img4.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img4.tablet.jpg 1x, ./image/portfolio/tablet/img4.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img4.mobile.jpg 1x, ./image/portfolio/mobile/img4.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img4.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                   
                     </div>                
                        <div class="design">
                           <h3 class="design__title">Проект Boxes</h3>
@@ -212,7 +262,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                    <img src="./image/img-portfolio/img-5.jpg" width="370" height="294" alt="монитор"> 
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img5.desctop.jpg 1x, ./image/portfolio/desctop/img5.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img5.tablet.jpg 1x, ./image/portfolio/tablet/img5.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img5.mobile.jpg 1x, ./image/portfolio/mobile/img5.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img5.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                    
                     </div>
                         <div class="design">
                         <h3 class="design__title">Inspiration has no Borders</h3>
@@ -230,7 +289,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                    <img src="./image/img-portfolio/img-6.jpg" width="370" height="294" alt="книга">
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img6.desctop.jpg 1x, ./image/portfolio/desctop/img6.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img6.tablet.jpg 1x, ./image/portfolio/tablet/img6.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img6.mobile.jpg 1x, ./image/portfolio/mobile/img6.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img6.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                    
                     </div>
                         <div class="design">
                          <h3 class="design__title">Издание Limited Edition</h3>
@@ -248,7 +316,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                      <img src="./image/img-portfolio/img-7.jpg" width="370" height="294" alt="логоип LAB">
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img7.desctop.jpg 1x, ./image/portfolio/desctop/img7.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img7.tablet.jpg 1x, ./image/portfolio/tablet/img7.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img7.mobile.jpg 1x, ./image/portfolio/mobile/img7.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img7.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                     
                     </div>
                         <div class="design">
                             <h3 class="design__title">Проект LAB</h3>
@@ -266,7 +343,16 @@
                                 шпионажа и атак на защищённые сервера конкурентов.
                             </p>
                         </div>
-                      <img src="./image/img-portfolio/img-8.jpg" width="370" height="294" alt="печать на ноутбуке">
+                        <picture>
+                            <source srcset="./image/portfolio/desctop/img8.desctop.jpg 1x, ./image/portfolio/desctop/img8.desctop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/portfolio/tablet/img8.tablet.jpg 1x, ./image/portfolio/tablet/img8.tablet@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/portfolio/mobile/img8.mobile.jpg 1x, ./image/portfolio/mobile/img8.mobile@2x.jpg 2x"
+                                media="(max-width: 767.98px)">
+                            <img src="./image/portfolio/desctop/img8.desctop.jpg" width="370" height="294" alt=" стораница веб сайта">
+                        </picture>
+                     
                     </div>
                            <div class="design">
                            <h2 class="design__title">Growing Business</h2> 
@@ -288,7 +374,7 @@
 
             <address class="footer__address">
                 <ul class="list-non footer__data">
-                    <li class="footer__address"><a class="foorer__adress" href="https://goo.gl/maps/GumJZrkpZJpaKMpm8"
+                    <li class="footer__address"><a class="foorer__place" href="https://goo.gl/maps/GumJZrkpZJpaKMpm8"
                             target="_blank" rel="nooper noreferrer">г. Киев, пр-т Леси Украинки, 26</a></li>
                     <li class="footer__address"><a class="footer__contacts" href="mailto:info@devstudio.com">info@example.com</a>
                     </li>
@@ -345,5 +431,6 @@
         </div>
     </div>
     </footer>
+    <script src="./js/menu-mobile.js"></script>
     </body>
 </html>

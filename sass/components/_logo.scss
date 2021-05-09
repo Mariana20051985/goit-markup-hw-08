@@ -1,5 +1,5 @@
 /* оформлення логотипу */
-.logo_web {
+.logo__web {
   color: var(--base-color-logo);
   text-decoration: none;
   font-family: Raleway;
@@ -11,8 +11,11 @@
   color: #000;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
 }
-.header_logo {
+.header__logo {
   @media screen and (min-width: 768px) {
     margin-right: 88px;
     padding-top: 26px;
